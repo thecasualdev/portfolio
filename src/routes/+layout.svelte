@@ -6,6 +6,7 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
+	<title>this is thecasualdev</title>
 </svelte:head>
 
 {@render children?.()}

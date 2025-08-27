@@ -1,4 +1,6 @@
 
+import { DISCORD_WEBHOOK_URL } from "$env/static/private"
+
 export const actions = {
     default: async ({ request }) => {
 
@@ -7,7 +9,7 @@ export const actions = {
         console.log(mail)
 
         await fetch (
-            "https://discord.com/api/webhooks/1410131814957453392/DZWwTncoAHwMc5tk1iiWEkaaxg6u11lVxv4wiDqi4goxRY24pCSJ4gQi2OxzVAQQ6WlV",
+            DISCORD_WEBHOOK_URL,
             {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
